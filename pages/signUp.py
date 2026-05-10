@@ -32,7 +32,7 @@ def get_data():
        mydb=conn["cv"]
        my=mydb["user_info"]
        #my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co,"photo":str1})
-        my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co})
+       my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co})
        st.success("You are regisstered !!!")
        
        
