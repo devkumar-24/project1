@@ -31,7 +31,8 @@ def get_data():
        conn=pymongo.MongoClient("mongodb+srv://devkumar:<db_password>@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0")
        mydb=conn["cv"]
        my=mydb["user_info"]
-       my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co,"photo":str1})
+       #my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co,"photo":str1})
+        my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co})
        st.success("You are regisstered !!!")
        
        
