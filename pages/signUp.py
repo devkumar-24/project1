@@ -27,7 +27,7 @@ def get_data():
        st.write(address)
        st.write(dob)
        st.write(co)
-       st.write(str1)
+       #st.write(str1)
        conn=pymongo.MongoClient("mongodb+srv://devkumar:<db_password>@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0")
        mydb=conn["cv"]
        my=mydb["user_info"]
