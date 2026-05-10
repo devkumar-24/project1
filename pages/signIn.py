@@ -6,7 +6,7 @@ t1 = st.text_input("Username")
 t2 = st.text_input("Password")
 if st.button("SIGNIN"):
     conn = pymongo.MongoClient(
-        "mongodb+srv://devkumar:<db_password>@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0"
+        "mongodb+srv://devkumar:@Dev89866@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0"
     )
     mydb = conn["cv"]
     my = mydb["user_info"]
