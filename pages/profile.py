@@ -6,7 +6,7 @@ import time
 #     time.sleep(2)
 c1, c2, c3 = st.columns(3)
 conn = pymongo.MongoClient(
-    "mongodb+srv://devkumar:@Dev89866@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0"
+    "mongodb+srv://devkumar:%40Dev89866@cluster0.kgk4tx3.mongodb.net/?retryWrites=true&w=majority"
 )
 mydb = conn["cv"]
 my = mydb["user_info"]
