@@ -28,7 +28,7 @@ def get_data():
        st.write(dob)
        st.write(co)
        #st.write(str1)
-       conn=pymongo.MongoClient("mongodb+srv://devkumar:<db_password>@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0")
+       conn=pymongo.MongoClient("mongodb+srv://devkumar:@Dev89866@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0")
        mydb=conn["cv"]
        my=mydb["user_info"]
        #my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co,"photo":str1})
