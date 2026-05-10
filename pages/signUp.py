@@ -24,8 +24,8 @@ b1 = st.button("SAVE")
 def get_data():
 
     conn = pymongo.MongoClient(
-        "mongodb+srv://devkumar:@Dev89866@cluster0.kgk4tx3.mongodb.net/?retryWrites=true&w=majority"
-    )
+    "mongodb+srv://devkumar:%40Dev89866@cluster0.kgk4tx3.mongodb.net/?retryWrites=true&w=majority"
+)
 
     mydb = conn["cv"]
 
