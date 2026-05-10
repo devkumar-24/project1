@@ -11,12 +11,12 @@ g=c1.radio("Gender",['M','F'])
 address=c2.text_area("Address")
 dob=c2.date_input("DOB")
 co=c2.color_picker("Select Color",value="#00f900")
-web_cam=c2.camera_input("Take a picture")
-count=random.randint(1,100)
-str1="img"+str(count)+".png"
-st.write(str1)
-with open(str1,"wb") as f:
-       f.write(web_cam.getvalue())
+#web_cam=c2.camera_input("Take a picture")
+#count=random.randint(1,100)
+#str1="img"+str(count)+".png"
+#st.write(str1)
+#with open(str1,"wb") as f:
+#       f.write(web_cam.getvalue())
 b1=st.button("SAVE")
 def get_data():
        st.success("Following Deatils are save successfully")
