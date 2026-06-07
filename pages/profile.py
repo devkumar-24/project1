@@ -4,7 +4,7 @@ import time
 
 # with st.spinner("Loading..."):
 #     time.sleep(2)
-c1, c2, c3 = st.columns(3)
+c1, c2 = st.columns(3)
 conn = pymongo.MongoClient(
     "mongodb+srv://devkumar:dev89866@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0"
 )
@@ -49,5 +49,3 @@ if st.session_state.show_pass:
             st.success("Password Changed Successfully!")
         else:
             st.error("Wrong Old Password")
-if c3.button("Analyse CV"):
-    pass
