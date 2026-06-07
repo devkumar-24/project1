@@ -4,7 +4,7 @@ import time
 
 # with st.spinner("Loading..."):
 #     time.sleep(2)
-c1, c2 = st.columns(3)
+c1, c2 = st.columns(2)
 conn = pymongo.MongoClient(
     "mongodb+srv://devkumar:dev89866@cluster0.kgk4tx3.mongodb.net/?appName=Cluster0"
 )
